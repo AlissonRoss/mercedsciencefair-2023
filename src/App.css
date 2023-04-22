@@ -1,21 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
+  height: fit-content;
+  color: white;
+  background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.Landing-Header{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1em;
+}
+.Landing-Title{
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 3em;
+  margin: .2em;
+}
+.About{
+  height:auto;
+  background-color: #282c34;
+  display: flex;
+}
+.About-Description{
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 5vh;
+}
+.Video{
+  padding-top: 5vh;
+  padding-left: 15vw;
+  padding-bottom: 5vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: radial-gradient(circle at 100%, #9a0da4, #110639 50%, #1c1ce7 80%, #000000 75%);
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
