@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&family=Space+Mono&display=swap');
 
 .App {
   text-align: center;
   height: fit-content;
   color: white;
   background-color: #282c34;
+  overflow-y: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.App-header{
+  background: radial-gradient(circle at 100%, #9a0da4, #110639 50%, #1c1ce7 80%, #000000 75%);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 .Landing-Header{
   font-family: 'Barlow Condensed', sans-serif;
@@ -25,42 +36,71 @@
   height:auto;
   background-color: #282c34;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .About-Description{
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  font-size: large;
   text-align: left;
   padding-left: 5vw;
   padding-top: 5vh;
+  width: 40vw;
+  margin-right: auto;
+}
+.MuiButtonBase-root.MuiButton-contained {
+  font-family: 'Space Mono', monospace;
+  background:  #9a0da4;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .Video{
+  margin-left: auto;
   padding-top: 5vh;
-  padding-left: 15vw;
   padding-bottom: 5vh;
+  max-height: 60vh;
+  margin-right: 10vw;
 }
-@media (prefers-reduced-motion: no-preference) {
+
+@media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    }
+  .App-link {
+    color: #61dafb;
   }
-}
-.App-header {
-  background: radial-gradient(circle at 100%, #9a0da4, #110639 50%, #1c1ce7 80%, #000000 75%);
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .About{
+    overflow-y: hidden;
+    justify-content: space-between;
+    max-width: auto;
+    flex-direction: column;
+    align-items: left;
   }
-  to {
-    transform: rotate(360deg);
+  .About-Description{
+    font-size: medium;
+    text-align:inherit;
+    width: 80vw;
+    padding-left: 10vw;
+  }
+  .MuiButtonBase-root.MuiButton-contained {
+    width: 10vw;
+    font-size: small;
+    font-weight: 100;
+    height: 10vh;
+    width: 10vw;
+    padding-left : 5em;
+    padding-right: 5em;
+
+  }
+  .Video{
+    padding-left: 0%;
+    margin: 0;
+    height: 50vh;
+    width: 95vw;
+    align-content: left;
+    position: initial;
   }
 }
