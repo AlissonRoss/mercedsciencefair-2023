@@ -104,3 +104,25 @@
     position: initial;
   }
 }
+
+/* Sponsor Section */
+.sponsorSection{
+  font-family: 'Space Mono', monospace;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorSection:first-child{
+  display: flex;
+  flex-direction: column;
+}
+.sponsorSection h2{
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.sponsorSection h4{
+  font-size: 1em;
+}
