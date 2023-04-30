@@ -1,5 +1,6 @@
 import Landing from './Components/Landing.js';
 import About from './Components/About.js';
+import Prizes from './Components/Prizes.js';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Landing/>
       </header>
       <About/>
+      <Prizes/>
     </div>
   );
 }

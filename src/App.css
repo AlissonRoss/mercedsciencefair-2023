@@ -65,6 +65,97 @@
   margin-right: 10vw;
 }
 
+.Prizes{
+  height:auto;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Prizes-Title{
+  align-items: center;
+  font-size: xx-large;
+  padding-top: 15vh;
+  margin-top: 15vh;
+  padding-bottom: 5vh;
+  font-family: 'Space Mono', monospace;
+}
+
+.Prizes-Description{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  font-size: large;
+  text-align: center;
+  padding-left: 15vh;
+  padding-right: 15vh;
+}
+
+.Left-Title{
+  font-size: xx-large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 15vh;
+  color:gold;
+}
+
+.Prizes-Prizes-left{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.Prizes-Name-left{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  color: lightblue;
+}
+
+.Right-Title{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  font-size: xx-large;
+  text-align: center;
+  padding-left: 125vh;
+  padding-right: 15vh;
+  color:gold;
+}
+
+.Prizes-Prizes-right{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  padding-left: 125vh;
+  padding-right: 15vh;
+}
+
+.Prizes-Name-right{
+  font-size: large;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  padding-left: 125vh;
+  padding-right: 15vh;
+  color: lightblue;
+}
+
 @media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
