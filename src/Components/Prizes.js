@@ -1,3 +1,4 @@
+
 function Prizes(){
     return(
         <div className="Prizes">
@@ -11,6 +12,7 @@ function Prizes(){
             <h3 className="Left-Title">
             1rst Place
             </h3>
+            <img Components="/Assets/drone.png" alt = ""/>
             <h3 className="Prizes-Prizes-left">
             &nbsp; The top prizes of all the categories are tablets, First place for Computer Science and High School include:
             </h3>
