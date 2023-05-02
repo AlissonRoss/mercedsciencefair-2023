@@ -1,0 +1,131 @@
+footer {
+  background-color: #110639;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  color: rgb(148 163 184);
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 1280px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 1rem;
+}
+
+.imageWrapper {
+  margin: auto 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Discord Link */
+.discord {
+  margin: auto 0;
+}
+
+.enhance {
+  color: white;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  font-size: 1rem;
+}
+
+.line {
+  margin: 0 1rem 0.5rem 1rem;
+  border-bottom: 1px solid rgb(148 163 184);
+}
+
+p {
+  font-size: 0.75rem;
+  margin: 0 1rem;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .columns {
+    margin: 0 8rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 75px;
+  }
+
+  svg {
+    height: 64px;
+    width: 64px;
+  }
+
+  .enhance {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    font-size: 1.125rem;
+  }
+
+  .line {
+    margin: 0 8rem 0.5rem 8rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .columns {
+    margin: 0 18rem;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .enhance {
+    font-size: 1.375rem;
+  }
+
+  .contact {
+    font-size: 1.25rem;
+  }
+
+  .line {
+    margin: 0 18rem 0.5rem 18rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+svg:hover {
+  fill: white;
+}
