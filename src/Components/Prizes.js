@@ -13,7 +13,7 @@ function Prizes(){
             &nbsp; There are three categories you can win prizes in! Computer Science, STEM, and High School! There are slightly different prizes for each category
             </h2>
             
-            <img class="image-one" src={tablet} alt = ""/>
+            <img className="image-one" src={tablet} alt = ""/>
             <h3 className="Left-Title">
             1rst Place
             </h3>
