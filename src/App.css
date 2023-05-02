@@ -133,6 +133,8 @@
   padding-left: 125vh;
   padding-right: 15vh;
   color:gold;
+  align-items: center;
+  padding-top: 20vh;
 }
 
 .Prizes-Prizes-right{
@@ -142,6 +144,7 @@
   text-align: center;
   width: 40vw;
   padding-left: 125vh;
+  align-items: center;
   padding-right: 15vh;
 }
 
@@ -154,8 +157,33 @@
   padding-left: 125vh;
   padding-right: 15vh;
   color: lightblue;
+  align-items: center;
 }
 
+.image-one{
+  position:absolute;
+  padding-top: 60vh;
+  align-items: center;
+  height: 70vh;
+  width: 70vh;
+  padding-left: 140vh;
+}
+.image-two{
+  position:absolute;
+  padding-top: 135vh;
+  align-items: center;
+  height: 75vh;
+  width: 75vh;
+  padding-left: 15vh;
+}
+.image-three{
+  position:absolute;
+  padding-top: 220vh;
+  align-items: center;
+  height: 60vh;
+  width: 90vh;
+  padding-left: 135vh;
+}
 @media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

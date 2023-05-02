@@ -1,3 +1,7 @@
+import React from 'react';
+import tablet from "../Assets/tablet.png";
+import storage from "../Assets/storage.png";
+import drone from "../Assets/drone.png";
 
 function Prizes(){
     return(
@@ -8,11 +12,11 @@ function Prizes(){
             <h2 className="Prizes-Description">
             &nbsp; There are three categories you can win prizes in! Computer Science, STEM, and High School! There are slightly different prizes for each category
             </h2>
-
+            
+            <img class="image-one" src={tablet} alt = ""/>
             <h3 className="Left-Title">
             1rst Place
             </h3>
-            <img Components="/Assets/drone.png" alt = ""/>
             <h3 className="Prizes-Prizes-left">
             &nbsp; The top prizes of all the categories are tablets, First place for Computer Science and High School include:
             </h3>
@@ -26,6 +30,7 @@ function Prizes(){
             and an Electronic Stylus Pen for Amazon HD Fire 10/8 Tablet Pencil, Active Digital Capacitive Pen for Amazon Fire HD 10 Tablet
             </h3>
             
+            <img class="image-two" src={storage} alt = ""/>
             <h3 className="Right-Title">
             2nd Place
             </h3>
@@ -48,6 +53,7 @@ function Prizes(){
             JBL CHARGE 5 - Portable Bluetooth Speaker with IP67 Waterproof and USB Charge out
             </h3>
 
+            <img class="image-three" src={drone} alt = ""/>
             <h3 className="Left-Title">
             3rd Place
             </h3>
