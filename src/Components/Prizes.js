@@ -27,7 +27,7 @@ function Prizes(){
             First place for STEM includes:
             </h3>
             <h3 className="Prizes-Name-left">
-            and an Electronic Stylus Pen for Amazon HD Fire 10/8 Tablet Pencil, Active Digital Capacitive Pen for Amazon Fire HD 10 Tablet
+            Kindle Fire HD and an Electronic Stylus Pen for Amazon HD Fire 10/8 Tablet Pencil, Active Digital Capacitive Pen for Amazon Fire HD 10 Tablet
             </h3>
             
             <img class="image-two" src={storage} alt = ""/>
