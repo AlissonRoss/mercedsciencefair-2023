@@ -22,6 +22,74 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* Navbar */
+.navbar-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(circle at 70%, #282c34, #110639 40%, #000 70%);
+
+}
+.logo-nav{
+  background-color: #000000;
+  object-fit: contain;
+}
+.logo-img{
+  width: 70px;
+  height: 70px;
+
+}
+.links-ul{
+  position: absolute;
+  right: 5%;
+  display: flex;
+  gap: 100px;
+}
+.links-ul > a {
+list-style: none;
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 1.5em;
+text-decoration: none;
+  color: white;
+}
+
+button > .material-icons{
+  display: none;
+}
+@media screen and (max-width:800px) {
+  .links-ul{
+    gap:55px;
+  }
+}
+@media screen and (max-width:525px) {
+  button > .material-icons{
+    display: block;
+
+  }
+  .links-ul{
+    display: none;
+  }
+}
+
+.sidebar-container{
+  position: absolute;
+  right: 0%;
+  top: 79%;
+}
+.sidebar-ul{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.359);
+  line-height: 35px;
+  color: white;
+}
+.sidebar-ul > a {
+  color: white;
+
+}
+/* End Navbar */
 .Landing-Header{
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1em;

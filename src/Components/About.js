@@ -2,7 +2,7 @@ import Video from '../Assets/Science2023.mp4';
 import { Button } from '@mui/material';
 function About(){
     return(
-        <div className="About">
+        <div className="About" id='about'>
             <h2 className="About-Description">
             &nbsp;Join in the excitement of STEM and enter to win awesome prizes in the Merced College annual Science Fair.  This year’s task is to invent something new and cool in the pursuance of STEM.  It can be any invention, 
                 but projects that involve some type of programming can win in a special category
