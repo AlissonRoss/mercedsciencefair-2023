@@ -4,7 +4,7 @@ import logo from "../Assets/logo.png";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="footer">
       <div className={styles.wrapper}>
         <div className={styles.columns}>
           <div className={styles.imageWrapper}>
