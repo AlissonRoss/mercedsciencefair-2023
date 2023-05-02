@@ -1,4 +1,4 @@
-
+import Prizes from './Components/Prizes.js';
 import NavBar from './Components/NavBar.js'
 import Landing from "./Components/Landing.js";
 import About from "./Components/About.js";
@@ -14,7 +14,8 @@ function App() {
         <Landing />
       </header>
 
-      <About />
+      <About/>
+      <Prizes/>
       <Sponsors/>
       <Footer />
     

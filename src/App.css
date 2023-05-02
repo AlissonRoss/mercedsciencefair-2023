@@ -138,6 +138,112 @@ button > .material-icons{
   margin-right: 10vw;
 }
 
+.Prizes{
+  height:auto;
+  background-color: #282c34;
+  display: flex;
+  flex-flow: wrap;
+  font-family: 'Space Mono', monospace;
+}
+.Prizes-Top-Description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.Prizes-Title{
+  
+  align-items: center;
+  font-size: xx-large;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+ 
+}
+
+.Prizes-Description{
+  font-size: large;
+  font-weight: 100;
+  font-size: large;
+  text-align: center;
+  padding-left: 15vh;
+  padding-right: 15vh;
+}
+
+.First-Place, .Second-Place, .Third-Place{
+  display: flex;
+  padding-top: 5vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Left-Title{
+  font-size: xx-large;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 2.5vw;
+  color:gold;
+}
+
+.Prizes-Prizes-left, .Prizes-Name-left{
+  display: flex;
+  font-size: large;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+.Left-Div{
+  width:calc(50% - 24px);
+}
+.Right-Div{
+  width:calc(50% - 24px);
+  text-align: right;
+}
+.First-Place>* , .Second-Place>* , .Third-Place>*{
+  display: absolute;
+}
+.Image-One , .Image-Three{
+  margin-right: 2vw;
+}
+.Image-Two{
+  padding-left: 10vw;
+  padding-top: 5vh;
+}
+.image-one ,.image-three{
+  height: 30vh;
+  padding-left: 20vw;
+}
+.image-two{
+  padding-right: 20vw;
+  height: 30vh;
+}
+.Prizes-Name-left{
+
+  color: lightblue;
+}
+
+.Right-Title{
+  font-size: large;
+  flex-direction: row;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+  font-size: xx-large;
+  text-align: right;
+  color:gold;
+  align-items: right;
+}
+
+.Prizes-Prizes-right , .Prizes-Name-right{
+  font-size: large;
+  font-weight: 100;
+  width: 40vw;
+  padding-left: 10vw;
+  padding-right: 15vw;
+  font-family: 'Space Mono', monospace;
+}
+
+.Prizes-Name-right{
+  color: lightblue;
+}
 @media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -176,6 +282,24 @@ button > .material-icons{
     align-content: left;
     position: initial;
   }
+
+  .Prizes , .Prizes-Prizes-left, .Prizes-Name-left, .Prizes-Name-right, .Prizes-Prizes-right, .Left-Div, .Right-Div, .Right-Title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+  }
+  .Right-Title{
+    padding-left: 2.5vw;
+  }
+  .Image-One, .image-one, .Image-Three, .image-three{
+    padding-left: 10vw;
+  }
+  .Image-Two , .image-two{
+    padding-left: 15vw;
+  }
+}
+
 }
 
 /* Sponsor Section */
@@ -199,3 +323,4 @@ button > .material-icons{
 .sponsorSection h4{
   font-size: 1em;
 }
+
