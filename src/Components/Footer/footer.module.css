@@ -1,0 +1,78 @@
+footer {
+  background-color: #110639;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  color: rgb(148 163 184);
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 1280px;
+}
+
+.enhance {
+  color: rgb(203 213 225);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.line {
+  margin: 0 1rem 0.5rem 1rem;
+  border-bottom: 1px solid #1c1ce7;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .columns {
+    margin: 0 8rem;
+  }
+
+  .line {
+    margin: 0 8rem 0.5rem 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .columns {
+    margin: 0 18rem;
+  }
+
+  .line {
+    margin: 0 18rem 0.5rem 18rem;
+  }
+}
+
+/* GitHub Links */
+.links {
+  text-align: center;
+}
+
+a {
+  margin: 0 1rem;
+}
+
+svg:hover {
+  fill: rgb(203 213 225);
+}
+
+.disclaimer {
+  font-family: "Barlow Condensed", sans-serif;
+}
