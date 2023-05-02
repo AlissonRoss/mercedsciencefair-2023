@@ -1,6 +1,6 @@
 import Landing from "./Components/Landing.js";
 import About from "./Components/About.js";
-import Footer from "./Components/Footer/Footer.js";
+import Footer from "./Components/Footer.js";
 import "./App.css";
 
 function App() {
