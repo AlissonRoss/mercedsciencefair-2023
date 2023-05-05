@@ -42,7 +42,7 @@
 .links-ul{
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  bottom: 40%;
   display: flex;
   gap: 100px;
 }
@@ -52,7 +52,7 @@
   font-size: 1.5em;
   text-decoration: none;
   color: white;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 button > .material-icons{
@@ -128,8 +128,9 @@ button > .material-icons{
   background:  #9a0da4;
   width: 10vw;
   height: 5vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 5em;
 }
 .Video{
   margin-left: auto;
@@ -145,6 +146,7 @@ button > .material-icons{
   display: flex;
   flex-flow: wrap;
   font-family: 'Space Mono', monospace;
+  margin-bottom: 10em;
 }
 .Prizes-Top-Description{
   display: flex;
@@ -174,7 +176,7 @@ button > .material-icons{
   display: flex;
   padding-top: 5vh;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 .Left-Title{
   font-size: xx-large;
@@ -198,6 +200,8 @@ button > .material-icons{
 .Right-Div{
   width:calc(50% - 24px);
   text-align: right;
+  padding-left: 25%;
+  
 }
 .First-Place>* , .Second-Place>* , .Third-Place>*{
   display: absolute;
@@ -206,16 +210,15 @@ button > .material-icons{
   margin-right: 2vw;
 }
 .Image-Two{
-  padding-left: 10vw;
   padding-top: 5vh;
+  
 }
 .image-one ,.image-three{
-  height: 30vh;
+  height: 25em;
   padding-left: 20vw;
 }
 .image-two{
-  padding-right: 20vw;
-  height: 30vh;
+  height: 30em;
 }
 .Prizes-Name-left{
 
@@ -224,13 +227,13 @@ button > .material-icons{
 
 .Right-Title{
   font-size: large;
-  flex-direction: row;
   font-family: 'Space Mono', monospace;
   font-weight: 100;
   font-size: xx-large;
   text-align: right;
   color:gold;
-  align-items: right;
+  width: 40vw;
+  padding-left: 10vw;
 }
 
 .Prizes-Prizes-right , .Prizes-Name-right{
@@ -238,7 +241,6 @@ button > .material-icons{
   font-weight: 100;
   width: 40vw;
   padding-left: 10vw;
-  padding-right: 15vw;
   font-family: 'Space Mono', monospace;
 }
 
@@ -305,10 +307,10 @@ button > .material-icons{
 .sponsorSection{
   font-family: 'Space Mono', monospace;
   background-color: rgba(0, 0, 0, 0.2);
-  height: 30vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 .sponsorSection:first-child{
@@ -316,8 +318,8 @@ button > .material-icons{
   flex-direction: column;
 }
 .sponsorSection h2{
-  font-size: 1.5em;
-  text-decoration: underline;
+  font-size: xx-large;
+  margin: 2em;
 }
 .sponsorSection h4{
   font-size: 1em;
