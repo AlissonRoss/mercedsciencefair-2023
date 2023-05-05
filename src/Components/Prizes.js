@@ -5,7 +5,7 @@ import drone from "../Assets/drone.png";
 
 function Prizes(){
     return(
-        <div className="Prizes">
+        <div className="Prizes" id='prizes'>
             <div className="Prizes-Top-Description">
                 <h1 className = "Prizes-Title">
                     Prizes

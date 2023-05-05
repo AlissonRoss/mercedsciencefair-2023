@@ -42,6 +42,7 @@
 .links-ul{
   position: absolute;
   right: 5%;
+  bottom: 10%;
   display: flex;
   gap: 100px;
 }
@@ -79,12 +80,12 @@ button > .material-icons{
 .sidebar-container{
   position: absolute;
   right: 0%;
-  top: 79%;
+  top: 100%;
 }
 .sidebar-ul{
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  padding: 0px 20px 0px 20px;
   gap: 10px;
   background-color: rgba(0, 0, 0, 0.359);
   line-height: 35px;
