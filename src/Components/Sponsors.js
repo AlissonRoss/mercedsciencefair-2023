@@ -10,6 +10,7 @@ export default function Sponsors() {
             <div className="sponsorList">
                 <h4>The 2023 Merced college Science Fair prizes were funded thanks to our sponsors</h4>
                 <a href="https://www.bayvalleytech.com"><img src={BayValleyTech} height="200"alt="Bay Valley Tech"/></a>
+                <h4>Bay Valley Tech will be present during the event to talk about their opportunities</h4>
             </div>
         </div>
     </div>
