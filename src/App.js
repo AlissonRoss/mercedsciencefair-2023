@@ -9,8 +9,9 @@ import Sponsors from './Components/Sponsors.js';
 function App() {
   return (
     <div className="App">
-        <NavBar/>
+        
       <header className="App-header">
+        <NavBar />
         <Landing />
       </header>
 
