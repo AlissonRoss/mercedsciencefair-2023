@@ -1,67 +1,44 @@
-import { Link, IconButton } from "@mui/material";
-import { Icon } from '@mui/material';
+import { Link } from "@mui/material";
 import Logo from '../Assets/Cahsi-logo1.png';
-import { useEffect, useState } from "react";
+import { useState, useRef } from "react";
+import {BiMenu} from 'react-icons/bi';
+import {AiOutlineClose} from 'react-icons/ai';
+
+function NavBar(){  
+    const navRef = useRef();
+    const [navOpen, setNavOpen] = useState(false);
 
 
-function NavBar() {
-    const [showSideBar, setShowSideBar] = useState(false)
+    const toggleNav = () => {
+        const visibility = navRef.current.getAttribute('data-visible');
+        navRef.current.setAttribute('data-visible', visibility === 'false' ? 'true' : 'false');
 
-
-    useEffect(() => { // controls mobile sidebar
-        function reSize() {
-            if (window.innerWidth > 524 && showSideBar === true) {
-                setShowSideBar(false);
-            }
+        if(navRef.current.getAttribute('data-visible') === 'false'){
+            setNavOpen(false);
         }
-        window.addEventListener('resize', reSize)
-
-        return () => { //clean up event listener, removes event listener
-            window.removeEventListener('resize', reSize)
+        else{ 
+            setNavOpen(true)
         }
-    }, [showSideBar])
-
-    function showSide() {
-        setShowSideBar(bool => !bool)
     }
-    return (
-        <>
-            <nav className="navbar-container" id='go-home'>
+
+    return(
+        <nav className="navbar">
                 <div className="logo-nav">
+                     <img className="logo-img" src={Logo} alt="CAHSI logo" />
+                 </div>
+                 
+                 <BiMenu onClick={() => toggleNav()} className={ navOpen === false ? "mobileNavToggle" : "hidden"} size={30}/>
+                 <AiOutlineClose className={ navOpen === true ? "mobileNavToggle" : "hidden"} data-closed="true" size={28} onClick={() => toggleNav()} />
 
-                    <img className="logo-img" src={Logo} alt="CAHSI logo" />
+                <div className="navSections">
+                    <ul ref={navRef} data-visible="false" className="nav-links">
+                        <li><Link className="links-li" href="#about">About</Link></li>
+                        <li><Link className="links-li" href="#prizes">Prizes</Link></li>
+                        <li><Link className="links-li" href="#footer">Contacts</Link></li>
+                    </ul> 
                 </div>
-                <ul className="links-ul">
-                    <Link className="links-li" href="#about">About</Link>
-                    <Link className="links-li" href="#prizes">Prizes</Link>
-                    <Link className="links-li" href="#footer">Contacts</Link>
-                </ul>
 
-                {showSideBar &&
-                    <div className="sidebar-container">
-                        <ul className="sidebar-ul">
-                            <Link className="sidebar-li" href="#about">About</Link>
-                            <Link className="sidebar-li" href="#prizes">Prizes</Link>
-                            <Link className="sidebar-li" href="#footer">Contacts</Link>
-                        </ul>
-                    </div>
-
-                }
-                <IconButton //component from MUI
-                    className="hamburger-icon"
-                    edge="start"
-                    aria-label="open drawer"
-                    sx={{ mr: 1, display: "flex", color: "white" }}
-                >
-                    <Icon  //component from MUI 
-                        onClick={showSide}>
-                        <svg viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z" />
-                        </svg>/1
-                    </Icon>
-                </IconButton>
-
-            </nav>
-        </>
-    );
-} export default NavBar;
+        </nav>
+    )
+}
+export default NavBar;
