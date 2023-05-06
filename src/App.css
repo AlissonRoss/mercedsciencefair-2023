@@ -172,6 +172,12 @@ button > .material-icons{
   padding-right: 15vh;
 }
 
+.prizes-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .First-Place, .Second-Place, .Third-Place{
   display: flex;
   padding-top: 5vh;
@@ -198,9 +204,7 @@ button > .material-icons{
   width:calc(50% - 24px);
 }
 .Right-Div{
-  width:calc(50% - 24px);
   text-align: right;
-  padding-left: 25%;
   
 }
 .First-Place>* , .Second-Place>* , .Third-Place>*{
@@ -215,7 +219,7 @@ button > .material-icons{
 }
 .image-one ,.image-three{
   height: 25em;
-  padding-left: 20vw;
+  /* padding-left: 20vw; */
 }
 .image-two{
   height: 30em;
@@ -286,20 +290,47 @@ button > .material-icons{
     position: initial;
   }
 
-  .Prizes , .Prizes-Prizes-left, .Prizes-Name-left, .Prizes-Name-right, .Prizes-Prizes-right, .Left-Div, .Right-Div, .Right-Title{
+    .Prizes-Prizes-left, .Prizes-Name-left, .Prizes-Name-right, .Prizes-Prizes-right, .Left-Div, .Right-Div, .Right-Title{
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: fit-content;
   }
   .Right-Title{
-    padding-left: 2.5vw;
+    padding-left: 7em;
   }
-  .Image-One, .image-one, .Image-Three, .image-three{
-    padding-left: 10vw;
+  .Right-Div{
+    padding-right: 5em;
+    text-align: center;
   }
-  .Image-Two , .image-two{
-    padding-left: 15vw;
+  .image-one, .image-three{
+    width: 25em;
+  }
+  .image-three{
+    padding-top: 8em;
+
+  }
+  .image-two{
+    width: 28em;
+    padding-top: 5em;
+  }
+  
+}
+
+@media screen and (max-width:900px) {
+  .First-Place, .Second-Place, .Third-Place {
+    flex-direction: column;
+  }
+  .Left-Title{
+    text-align: center;
+  }
+  .Right-Div{
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .Right-Title{
+    padding-left: 4em;
   }
 }
 
