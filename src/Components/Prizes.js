@@ -6,6 +6,7 @@ import drone from "../Assets/drone.png";
 function Prizes(){
     return(
         <div className="Prizes" id='prizes'>
+
             <div className="Prizes-Top-Description">
                 <h1 className = "Prizes-Title">
                     Prizes
@@ -14,8 +15,8 @@ function Prizes(){
                 &nbsp; There are three categories you can win prizes in Computer Science, STEM, and High School! There are slightly different prizes for each category
                 </h2>
             </div>
+
             <div className='First-Place'>
-                
                 <div className='Left-Div'>
                     <h3 className="Left-Title">
                         1st Place
@@ -38,6 +39,7 @@ function Prizes(){
                     <img className="image-one" src={tablet} alt = ""/>
                 </div>
             </div>
+
             <div className='Second-Place'>
                 <div className='Image-Two'>
                     <img className="image-two" src={storage} alt = ""/>
@@ -47,7 +49,7 @@ function Prizes(){
                         2nd Place
                     </h3>
                     <h3 className="Prizes-Prizes-right">
-                        &nbsp; The second prize of each category include various fun and useful electronics, Second place for Computer Science is:
+                        The second prize of each category include various fun and useful electronics, Second place for Computer Science is:
                     </h3>
                     <h3 className="Prizes-Name-right">
                         Mechanical keyboard, Ducky One 3 TKL Daybreak
