@@ -199,6 +199,12 @@
   padding-right: 15vh;
 }
 
+.prizes-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .First-Place, .Second-Place, .Third-Place{
   display: flex;
   padding-top: 5vh;
@@ -220,6 +226,27 @@
   padding-right: 5vh;
 }
 
+.Left-Div{
+  width:calc(50% - 24px);
+}
+.Right-Div{
+  text-align: right;
+  
+}
+.First-Place>* , .Second-Place>* , .Third-Place>*{
+  display: absolute;
+}
+.Image-One , .Image-Three{
+  margin-right: 2vw;
+}
+.Image-Two{
+  padding-top: 5vh;
+  
+}
+.image-one ,.image-three{
+  height: 25em;
+  /* padding-left: 20vw; */
+}
 
 .image-two{
   height: 500px;

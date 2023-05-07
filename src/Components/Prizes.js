@@ -15,6 +15,9 @@ function Prizes(){
                 &nbsp; There are three categories you can win prizes in Computer Science, STEM, and High School! There are slightly different prizes for each category
                 </h2>
             </div>
+      
+            <div className="prizes-container">
+
 
             <div className='First-Place'>
                 <div className='Left-Div'>
@@ -96,6 +99,7 @@ function Prizes(){
                 <div className='Image-Three'>
                     <img className="image-three" src={drone} alt = ""/>
                 </div>
+            </div>
             </div>
         </div>
         
