@@ -6,6 +6,7 @@
   color: white;
   background-color: #282c34;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -166,27 +167,27 @@
   margin-right: 10vw;
 }
 
+/* Prize Section */
+
 .Prizes{
   height:auto;
   background-color: #282c34;
   display: flex;
   flex-flow: wrap;
   font-family: 'Space Mono', monospace;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
+
 .Prizes-Top-Description{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
 .Prizes-Title{
-  
   align-items: center;
   font-size: xx-large;
   padding-top: 5vh;
   padding-bottom: 5vh;
- 
 }
 
 .Prizes-Description{
@@ -208,24 +209,23 @@
   display: flex;
   padding-top: 5vh;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  align-items: center;
+  justify-content: center;
 }
 .Left-Title{
   font-size: xx-large;
   font-weight: 100;
-  text-align: left;
-  padding-left: 2.5vw;
   color:gold;
 }
 
 .Prizes-Prizes-left, .Prizes-Name-left{
-  display: flex;
   font-size: large;
   font-weight: 100;
   text-align: left;
   padding-left: 5vh;
   padding-right: 5vh;
 }
+
 .Left-Div{
   width:calc(50% - 24px);
 }
@@ -247,9 +247,12 @@
   height: 25em;
   /* padding-left: 20vw; */
 }
+
 .image-two{
-  height: 30em;
+  height: 500px;
+  width: 500px;
 }
+
 .Prizes-Name-left{
 
   color: lightblue;
@@ -260,23 +263,36 @@
   font-family: 'Space Mono', monospace;
   font-weight: 100;
   font-size: xx-large;
-  text-align: right;
   color:gold;
-  width: 40vw;
-  padding-left: 10vw;
 }
 
 .Prizes-Prizes-right , .Prizes-Name-right{
   font-size: large;
   font-weight: 100;
-  width: 40vw;
-  padding-left: 10vw;
+  text-align: left;
   font-family: 'Space Mono', monospace;
 }
 
 .Prizes-Name-right{
   color: lightblue;
 }
+
+.First-Place , .Second-Place , .Third-Place{
+  padding: min(20vh, 7em) 1em;  
+}
+
+.First-Place{
+  background: linear-gradient(to bottom, #282c34, #110639);
+}
+.Third-Place{
+  background: linear-gradient(to bottom,#110639, #282c34);
+}
+.Second-Place{
+  background-color: #110639;
+}
+/* End of prize section */
+
+
 @media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -316,61 +332,48 @@
     position: initial;
   }
 
-    .Prizes-Prizes-left, .Prizes-Name-left, .Prizes-Name-right, .Prizes-Prizes-right, .Left-Div, .Right-Div, .Right-Title{
-    display: flex;
+  /* Prize section mobile */
+
+  .First-Place , .Second-Place , .Third-Place{
     flex-direction: column;
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
   }
-  .Right-Title{
-    padding-left: 7em;
-  }
-  .Right-Div{
-    padding-right: 5em;
+
+  .Right-Div h3, .Left-Div h3{
     text-align: center;
   }
-  .image-one, .image-three{
-    width: 25em;
-  }
-  .image-three{
-    padding-top: 8em;
 
+  .image-one{
+    height: 300px;
+    width: 300px;
   }
   .image-two{
-    width: 28em;
-    padding-top: 5em;
+    height: 300px;
+    width: 300px;
   }
-  
-}
 
-@media screen and (max-width:900px) {
-  .First-Place, .Second-Place, .Third-Place {
-    flex-direction: column;
-  }
-  .Left-Title{
-    text-align: center;
-  }
-  .Right-Div{
-    text-align: left;
-  }
-}
-
-@media screen and (max-width:500px) {
-  .Right-Title{
-    padding-left: 4em;
-  }
   .image-three{
-    padding-top: 0em;
-
+    height: 200px;
+    width: 350px;
   }
+
+  .image-one, .image-two, .image-three{
+    padding-block: 2em;
+  }
+
+  /* End of prize section mobile */
+
 }
 
 /* Sponsor Section */
 .sponsorSection{
   font-family: 'Space Mono', monospace;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #282c34, #110639);
   height: 50vh;
   display: flex;
-  padding-bottom:15em;
+  padding-block:10em;
   justify-content: center; 
 }
 
