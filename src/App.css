@@ -199,12 +199,6 @@
   padding-right: 15vh;
 }
 
-.prizes-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .First-Place, .Second-Place, .Third-Place{
   display: flex;
   padding-top: 5vh;
@@ -226,35 +220,21 @@
   padding-right: 5vh;
 }
 
-.Left-Div{
-  width:calc(50% - 24px);
-}
-.Right-Div{
-  text-align: right;
-  
-}
-.First-Place>* , .Second-Place>* , .Third-Place>*{
-  display: absolute;
-}
-.Image-One , .Image-Three{
-  margin-right: 2vw;
-}
-.Image-Two{
-  padding-top: 5vh;
-  
-}
-.image-one ,.image-three{
-  height: 25em;
-  /* padding-left: 20vw; */
-}
 
+.image-one{
+  height: 50vh;
+  width: 50vh;
+}
 .image-two{
-  height: 500px;
-  width: 500px;
+  height: 50vh;
+  width: 50vh;
+}
+.image-three{
+  height: 35vh;
+  width: 50vh;
 }
 
 .Prizes-Name-left{
-
   color: lightblue;
 }
 
@@ -278,12 +258,11 @@
 }
 
 .First-Place , .Second-Place , .Third-Place{
-  padding: min(20vh, 7em) 1em;  
+  padding: min(20vh, 5em) 1em;  
 }
 
 .First-Place{
   background: linear-gradient(to bottom, #282c34, #110639);
-  width: 100vw;
 }
 .Third-Place{
   background: linear-gradient(to bottom,#110639, #282c34);
@@ -334,38 +313,30 @@
   }
 
   /* Prize section mobile */
-  .Prizes{
-    margin-bottom: 0;
-  }
+
   .First-Place , .Second-Place , .Third-Place{
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
-    padding: 0;
   }
-  .Prizes-Description{
-    padding:0;
-  }
-  .Left-Div, .Right-Div{
-    width:85vw;
-  }
+
   .Right-Div h3, .Left-Div h3{
     text-align: center;
   }
 
   .image-one{
-    height: 300px;
-    width: 300px;
+    height: 30vh;
+    width: 30vh;
   }
   .image-two{
-    height: 300px;
-    width: 300px;
+    height: 30vh;
+    width: 30vh;
   }
 
   .image-three{
-    height: 200px;
-    width: 350px;
+    height: 25vh;
+    width: 40vh;
   }
 
   .image-one, .image-two, .image-three{
@@ -386,7 +357,7 @@
   background: linear-gradient(to bottom, #282c34, #110639);
   height: 50vh;
   display: flex;
-  padding-block:10em;
+  padding-block:8em;
   justify-content: center; 
 }
 
