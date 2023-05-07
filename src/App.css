@@ -283,6 +283,7 @@
 
 .First-Place{
   background: linear-gradient(to bottom, #282c34, #110639);
+  width: 100vw;
 }
 .Third-Place{
   background: linear-gradient(to bottom,#110639, #282c34);
@@ -333,14 +334,22 @@
   }
 
   /* Prize section mobile */
-
+  .Prizes{
+    margin-bottom: 0;
+  }
   .First-Place , .Second-Place , .Third-Place{
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    padding: 0;
   }
-
+  .Prizes-Description{
+    padding:0;
+  }
+  .Left-Div, .Right-Div{
+    width:85vw;
+  }
   .Right-Div h3, .Left-Div h3{
     text-align: center;
   }
@@ -365,6 +374,10 @@
 
   /* End of prize section mobile */
 
+  /*Footer Mobile Viewport*/
+  #footer{
+    padding-top: 10em;;
+  }
 }
 
 /* Sponsor Section */
