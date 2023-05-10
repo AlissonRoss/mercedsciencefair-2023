@@ -32,9 +32,10 @@ function NavBar(){
 
                 <div className="navSections">
                     <ul ref={navRef} data-visible="false" className="nav-links">
-                        <li><Link className="links-li" href="#about">About</Link></li>
-                        <li><Link className="links-li" href="#prizes">Prizes</Link></li>
-                        <li><Link className="links-li" href="#footer">Contacts</Link></li>
+                        <li><Link className="links-li" href="/#about">About</Link></li>
+                        <li><Link className="links-li" href="/#prizes">Prizes</Link></li>
+                        <li><Link className="links-li" href="/#footer">Contacts</Link></li>
+                        <li><Link className="links-li" href="/Team">Meet Our Team</Link></li>
                     </ul> 
                 </div>
 

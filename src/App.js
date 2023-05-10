@@ -1,25 +1,18 @@
-import Prizes from './Components/Prizes.js';
-import NavBar from './Components/NavBar.js'
-import Landing from "./Components/Landing.js";
-import About from "./Components/About.js";
-import Footer from "./Components/Footer.js";
+import Home from './Components/Home.js';
+import Team from './Components/Team.js';
 import "./App.css";
-import Sponsors from './Components/Sponsors.js';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-        
-      <header className="App-header">
-        <NavBar />
-        <Landing />
-      </header>
-
-      <About/>
-      <Prizes/>
-      <Sponsors/>
-      <Footer />
-    
+    <div>
+        <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/Team" element={<Team />}/>
+        </Routes>  
+      </BrowserRouter>
     </div>
   );
 }

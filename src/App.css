@@ -275,6 +275,13 @@
   padding-top: 10em;
 }
 
+/*END Footer*/
+
+/*START Team*/
+.Team{
+  height:50vh;
+}
+
 @media (max-width: 1250px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
