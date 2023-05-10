@@ -271,7 +271,9 @@
   background-color: #110639;
 }
 /* End of prize section */
-
+#footer{
+  padding-top: 10em;
+}
 
 @media (max-width: 1250px) {
   .App-logo {
@@ -345,9 +347,14 @@
 
   /* End of prize section mobile */
 
+  /*Sponsors Mobile Viewport*/
+  .sponsorList{
+    padding-right: 5vw;
+    width: 95vw;
+  }
   /*Footer Mobile Viewport*/
   #footer{
-    padding-top: 10em;;
+    padding-top: 30em;
   }
 }
 
