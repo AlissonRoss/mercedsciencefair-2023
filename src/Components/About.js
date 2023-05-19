@@ -4,13 +4,10 @@ function About(){
     return(
         <div className="About" id='about'>
             <h2 className="About-Description">
-            &nbsp;Join in the excitement of STEM and enter to win awesome prizes in the Merced College annual Science Fair.  This year’s task is to invent something new and cool in the pursuance of STEM.  It can be any invention, 
-                but projects that involve some type of programming can win in a special category
-                &nbsp;Registration is open to all Undergrad and High school students 
-                in the central valley!
+            &nbsp;Thank you all for joining this year's Science Fair! Stay tuned for Science Fair 2024!
                 <br/>
-                <Button variant="contained" className="About-Button" href="https://forms.gle/WQNv3XrKPyRyh86a7">
-                    Registration Form
+                <Button variant="outlined" disabled>
+                    Registration Form closed
                 </Button>
                 <br/>
                 &nbsp;This website is under construction by the members of the 

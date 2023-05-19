@@ -150,14 +150,17 @@
   width: 40vw;
   margin-right: auto;
 }
-.MuiButtonBase-root.MuiButton-contained {
+.MuiButtonBase-root.MuiButton-outlined {
   font-family: 'Space Mono', monospace;
-  background:  #9a0da4;
+  background:  #432145;
   width: 10vw;
   height: 5vh;
   padding-top: 1em;
   padding-bottom: 1em;
   margin: 5em;
+}
+.MuiButtonBase-root.MuiButton-outlined:disabled{
+  color: white;
 }
 .Video{
   margin-left: auto;
