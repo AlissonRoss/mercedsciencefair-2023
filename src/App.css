@@ -209,7 +209,7 @@
   align-items: center;
   justify-content: center;
 }
-.Left-Title{
+.Left-Title, .Left-Name{
   font-size: xx-large;
   font-weight: 100;
   color:gold;
@@ -222,7 +222,6 @@
   padding-left: 5vh;
   padding-right: 5vh;
 }
-
 
 .image-one{
   height: 50vh;
@@ -241,7 +240,7 @@
   color: lightblue;
 }
 
-.Right-Title{
+.Right-Title, .Name{
   font-size: large;
   font-family: 'Space Mono', monospace;
   font-weight: 100;
@@ -282,7 +281,23 @@
 
 /*START Team*/
 .Team{
-  height:50vh;
+  height:auto;
+  font-family: 'Space Mono', monospace;
+  font-weight: 100;
+}
+.Team-Img{
+  box-shadow: -5px -5px 10px rgba(81, 81, 81, 0.5),
+            5px 5px 10px rgba(70,70,70,0.12);
+  border-radius: 25%;
+}
+.Team-Member-Div{
+  padding-bottom: 5em;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.Team-Description{
+  overflow-wrap: break-word;
+  font-weight: 100;
 }
 
 @media (max-width: 1250px) {
