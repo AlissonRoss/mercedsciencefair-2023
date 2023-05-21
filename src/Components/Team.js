@@ -49,7 +49,7 @@ function Team() {
               <h3 className="Team-Description">
                 My name is Alisson. I am from Managua, Nicaragua. I love art, web development, and cats!
                 I am transferring to CSU Stanislaus to continue my Computer Science studies.
-                I keep going despite my failures and hoping to one day become a full-time Front-end Engineer in Industry!
+                I keep going despite my failures and hoping to one day become a full-time Front-end Engineer!
               </h3>
               Connect with Alisson on LinkedIn<br/>
               <a href="https://www.linkedin.com/in/alisson-ross/"><img src={LinkedIn} width={50} alt="LinkedIn"/></a>
@@ -59,7 +59,10 @@ function Team() {
               <img className="Team-Img" src={Stefin} width="250" alt="Stefin Racho"/>
               <h2 className="Name">Stefin Racho</h2>
               <h3 className="Team-Description">
-                Hello I am Stefin!
+              As a student at UC Merced, I'm actively working towards attaining my Bachelor's Degree in Computer Science and Engineering, 
+              alongside independently refining my skills in web development. 
+              With a commitment to lifelong learning, my ultimate objective is to use these skills to make a significant impact 
+              in the dynamic tech industry.
               </h3>
               Connect with Stefin on LinkedIn<br/>
               <a href="https://www.linkedin.com/in/stefinracho/"><img src={LinkedIn} width={50} alt="LinkedIn"/></a>
